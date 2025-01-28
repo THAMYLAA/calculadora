@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function abrirCalculadora() {
+            window.open(
+                'calculadora.html', // URL da página da calculadora
+                'Calculadora',
+                'width=400,height=600,resizable=no,scrollbars=no,status=no'
+            );
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="title">Calculadora de Moedas</div>
+            <div class="explanation">
+                <p>Bem-vindo à Calculadora de Conversão de Moeda!</p>
+                <p>Com esta ferramenta, você pode facilmente converter valores em Reais (R$) para Dólares (US$). Basta informar o valor em Reais e a cotação do Dólar (quanto um dólar custa em reais) para que a conversão seja feita automaticamente.</p>
+                <p>Como usar:</p>
+                <ul>
+                    <li>Digite a cotação do Dólar (por exemplo, 5.00).</li>
+                    <li>Informe o valor que você deseja converter de Reais para Dólares.</li>
+                    <li>Clique no botão "Converter" e o valor em Dólares será mostrado abaixo.</li>
+                </ul>
+                <p>Essa ferramenta é muito útil para ajudar você a entender quanto o valor em Reais representa em Dólares com base na cotação atual.</p>
+            </div>            
+            <button onclick="abrirCalculadora()">Abrir Calculadora</button>
+        </div>
+    </main>
+</body>
+</html>
